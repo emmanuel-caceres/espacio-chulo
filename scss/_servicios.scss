@@ -1,0 +1,320 @@
+/* SERVICIOS */
+.servicios__text-start{
+    font-size: 1rem;
+}
+
+.servicios__text-end{
+    font-size: 1rem;
+    text-align: end;
+}
+
+.servicios__div--diseño-interiores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicios__div--muebles-medida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Animacion IMG Grande */
+
+@mixin img-grande {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cont-img-grande{
+    position: relative;
+    display: flex;
+}
+
+.img-grande-1{
+    @include img-grande;
+}
+
+.img-grande-2{
+    @include img-grande;
+    position: absolute;
+    /* Animación */
+    animation-name: serv-img-gr-2;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+.img-grande-3{
+    @include img-grande;
+    position: absolute;
+    /* Animación */
+    animation-name: serv-img-gr-3;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+@keyframes serv-img-gr-2{
+    0%{ opacity: 0% }
+    20%{ opacity: 0% }
+    30%{ opacity: 100% }
+    50%{ opacity: 100% }
+    60%{ opacity: 0% }
+    100%{ opacity: 0% }
+}
+
+@keyframes serv-img-gr-3{
+    0%{ opacity: 0% }
+    50%{ opacity: 0% }
+    60%{ opacity: 100% }
+    90%{ opacity: 100% }
+    100%{ opacity: 0% }
+}
+
+/* Fin Animacion IMG Grande */
+
+/* Animacion IMG Chica */
+
+@mixin img-chica {
+    width: 205px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.img-chica-1{
+    @include img-chica;
+    /*animacion*/
+    animation-name: serv-img-chica-1;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+.img-chica-2{
+    @include img-chica;
+    /* Animacion */
+    animation-name: serv-img-chica-2;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+.img-chica-3{
+    @include img-chica;
+    /* Animacion */
+    animation-name: serv-img-chica-3;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+@keyframes serv-img-chica-1{
+    0%{ opacity: 100% }
+    20%{ opacity: 100% }
+    30%{ opacity: 30% }
+    90%{ opacity: 30% }
+    100%{ opacity: 100% }
+}
+
+@keyframes serv-img-chica-2{
+    0%{ opacity: 30% }
+    20%{ opacity: 30% }
+    30%{ opacity: 100% }
+    50%{ opacity: 100% }
+    60%{ opacity: 30% }
+    100%{ opacity: 30% }
+}
+
+@keyframes serv-img-chica-3{
+    0%{ opacity: 30% }
+    50%{ opacity: 30% }
+    60%{ opacity: 100% }
+    90%{ opacity: 100% }
+    100%{ opacity: 30% }
+}
+
+// Servicios Secundarios
+
+.img__ss-contenedor{
+    width: 100%;
+    height: 450px;
+    margin-top: 200px;
+    object-fit: cover;
+}
+
+.div__h2-contenido-reciclado{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.div__h2-contenido-cortinado{
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+}
+
+.div__h2-texto{
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px (gray);
+}
+
+.div__p-texto{
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* Clientes */
+
+.cartel-cliente{
+    height: 100px;
+    margin: 50px 0 50px 0;
+    box-shadow: 0 0 15px #928f8f;
+    background-color: $colorprincipal;
+}
+
+.img-clientes-contenedor{
+    height: 350px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: $colorsecundario;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 5px 5px 10px rgb(207, 207, 207);
+}
+
+.img-cliente-contenido{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+}
+
+.img-cliente{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.comentario{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+}
+
+
+@media (max-width: 400px) {
+
+    .img-grande-1{
+        height: 250px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .img-grande-2{
+        height: 250px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .img-grande-3{
+        height: 250px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .img-clientes-contenedor{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .servicios__div--diseño-interiores{
+        align-items: center;
+    }
+
+    .servicios__text-start{
+        text-align: center;
+    }
+
+    .servicios__div--muebles-medida{
+        align-items: center;
+    }
+
+    .servicios__text-end{
+        text-align: center;
+    }
+
+    .img__ss-contenedor{
+        width: 100%;
+        height: 250px;
+        margin-top: 30px;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .img-chica-1{
+        width: 140px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .img-chica-2{
+        width: 140px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .img-chica-3{
+        width: 140px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .img-chica-1{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .img-chica-2{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .img-chica-3{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .img-grande-1{
+        height: 200px;
+        margin-top: 0px;
+    }
+
+    .img-grande-2{
+        height: 200px;
+        margin-top: 0px;
+    }
+
+    .img-grande-3{
+        height: 200px;
+        margin-top: 0px;
+    }
+
+    .img__ss-contenedor{
+        margin-top: 0px;
+        height: 200px;
+    }
+
+}

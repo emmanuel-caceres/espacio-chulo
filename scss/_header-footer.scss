@@ -1,0 +1,137 @@
+
+body{
+    font-size: 62.5%;
+}
+
+header{
+
+    .header__menu-estilo{
+        background-color: $colorprincipal;
+        border-radius: 10px;
+
+        nav{
+
+            ul{
+                list-style: none;
+
+                li{
+                    
+                    a{
+                        font-size: 1.1rem;
+                        color: white;
+                        padding: 0px 20px 0px 20px;
+                    }
+
+                    a:hover{
+                        color: black;
+                        text-decoration: none;
+                        background-color: $colorsecundario;
+                        padding: 8px 20px 8px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-bar{
+    position: fixed;
+    top: 0px;
+    right: 10%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    z-index: 100;
+}
+
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon:hover{
+    padding-top: 3rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.42);
+}
+
+.icon-instagram{
+    background-color: #dd2a7b;
+    border-radius: 0 0 0 10px;
+}
+
+.icon-facebook2{
+    background-color: #2e4063;
+    border-radius: 0 0 10px 0;
+}
+
+/* Footer */
+
+footer{
+    height: 100px;
+    background-color: #3d3d3d;
+}
+
+.footer__div__p{
+    font-size: 1rem;
+    color: white;
+    margin-right: 40px;
+}
+
+// Estilos para H
+
+h1{
+    color: white;
+}
+
+h2{
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+// Media
+
+@media (max-width: 800px) {
+
+    .social-bar{
+        position: fixed;
+        top: 30%;
+        right: 0;
+        flex-direction: column;
+        font-size: 1.5rem;
+        z-index: 100;
+    }
+    
+    .icon:hover{
+        padding-top: 0px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .icon-instagram{
+        border-radius: 10px 0 0 0;
+    }
+    
+    .icon-facebook2{
+        border-radius: 0 0 0 10px;
+    }
+
+// media de footer
+
+    .footer__div--logo-redondo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__div__p{
+        font-size: .7rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+}

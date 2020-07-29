@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/* INDEX */
+.carousel--img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; }
+
+.div__bajada--disenio-interiores {
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 50px; }
+
+.bajada--texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Tamaño del recuadro */
+  width: 80%;
+  height: 45%;
+  padding: 1rem 2rem 1rem 2rem;
+  /* Tamaño del recuadro */
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.div__bajada--font-size {
+  font-size: 1.5rem; }
+
+.index__div__h1-estilos {
+  color: black;
+  font-weight: lighter;
+  font-size: 4rem; }
+
+.index__h1__a-estilo {
+  color: white;
+  text-decoration: none; }
+  .index__h1__a-estilo:hover {
+    color: white; }
+
+/* FIN INDEX */
+@media (max-width: 800px) {
+  /* INDEX */
+  h1 {
+    font-size: 1rem; }
+  .carousel--img {
+    height: 250px; }
+  .div__bajada--disenio-interiores {
+    height: 600px; }
+  .bajada--texto-encima {
+    height: 50%; }
+  .index__div__img-size {
+    height: 550px;
+    width: 100%;
+    object-fit: cover; }
+  .div__bajada--font-size {
+    font-size: 1rem; }
+  .index__div__h1-estilos {
+    font-weight: lighter;
+    font-size: 2rem; } }
+
+/* SERVICIOS */
+.servicios__text-start {
+  font-size: 1rem; }
+
+.servicios__text-end {
+  font-size: 1rem;
+  text-align: end; }
+
+.servicios__div--diseño-interiores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.servicios__div--muebles-medida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+
+/* Animacion IMG Grande */
+.cont-img-grande {
+  position: relative;
+  display: flex; }
+
+.img-grande-1 {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.img-grande-2 {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: absolute;
+  /* Animación */
+  animation-name: serv-img-gr-2;
+  animation-iteration-count: infinite;
+  animation-duration: 16s; }
+
+.img-grande-3 {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: absolute;
+  /* Animación */
+  animation-name: serv-img-gr-3;
+  animation-iteration-count: infinite;
+  animation-duration: 16s; }
+
+@keyframes serv-img-gr-2 {
+  0% {
+    opacity: 0%; }
+  20% {
+    opacity: 0%; }
+  30% {
+    opacity: 100%; }
+  50% {
+    opacity: 100%; }
+  60% {
+    opacity: 0%; }
+  100% {
+    opacity: 0%; } }
+
+@keyframes serv-img-gr-3 {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%; }
+  60% {
+    opacity: 100%; }
+  90% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+
+/* Fin Animacion IMG Grande */
+/* Animacion IMG Chica */
+.img-chica-1 {
+  width: 205px;
+  height: 150px;
+  object-fit: cover;
+  /*animacion*/
+  animation-name: serv-img-chica-1;
+  animation-iteration-count: infinite;
+  animation-duration: 16s; }
+
+.img-chica-2 {
+  width: 205px;
+  height: 150px;
+  object-fit: cover;
+  /* Animacion */
+  animation-name: serv-img-chica-2;
+  animation-iteration-count: infinite;
+  animation-duration: 16s; }
+
+.img-chica-3 {
+  width: 205px;
+  height: 150px;
+  object-fit: cover;
+  /* Animacion */
+  animation-name: serv-img-chica-3;
+  animation-iteration-count: infinite;
+  animation-duration: 16s; }
+
+@keyframes serv-img-chica-1 {
+  0% {
+    opacity: 100%; }
+  20% {
+    opacity: 100%; }
+  30% {
+    opacity: 30%; }
+  90% {
+    opacity: 30%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes serv-img-chica-2 {
+  0% {
+    opacity: 30%; }
+  20% {
+    opacity: 30%; }
+  30% {
+    opacity: 100%; }
+  50% {
+    opacity: 100%; }
+  60% {
+    opacity: 30%; }
+  100% {
+    opacity: 30%; } }
+
+@keyframes serv-img-chica-3 {
+  0% {
+    opacity: 30%; }
+  50% {
+    opacity: 30%; }
+  60% {
+    opacity: 100%; }
+  90% {
+    opacity: 100%; }
+  100% {
+    opacity: 30%; } }
+
+.img__ss-contenedor {
+  width: 100%;
+  height: 450px;
+  margin-top: 200px;
+  object-fit: cover; }
+
+.div__h2-contenido-reciclado {
+  position: absolute;
+  top: 30%;
+  left: 30%; }
+
+.div__h2-contenido-cortinado {
+  position: absolute;
+  bottom: 30%;
+  left: 30%; }
+
+.div__h2-texto {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 10px gray; }
+
+.div__p-texto {
+  font-size: .8rem;
+  text-align: center; }
+
+/* Clientes */
+.cartel-cliente {
+  height: 100px;
+  margin: 50px 0 50px 0;
+  box-shadow: 0 0 15px #928f8f;
+  background-color: #b56576; }
+
+.img-clientes-contenedor {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #e56b6f;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 5px 5px 10px #cfcfcf; }
+
+.img-cliente-contenido {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px; }
+
+.img-cliente {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; }
+
+.comentario {
+  width: 100%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px 8px 0 0;
+  padding: 10px; }
+
+@media (max-width: 400px) {
+  .img-grande-1 {
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .img-grande-2 {
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .img-grande-3 {
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .img-clientes-contenedor {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .servicios__div--diseño-interiores {
+    align-items: center; }
+  .servicios__text-start {
+    text-align: center; }
+  .servicios__div--muebles-medida {
+    align-items: center; }
+  .servicios__text-end {
+    text-align: center; }
+  .img__ss-contenedor {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    object-fit: cover; } }
+
+@media (max-width: 1050px) {
+  .img-chica-1 {
+    width: 140px;
+    height: 100px;
+    margin-bottom: 20px; }
+  .img-chica-2 {
+    width: 140px;
+    height: 100px;
+    margin-bottom: 20px; }
+  .img-chica-3 {
+    width: 140px;
+    height: 100px;
+    margin-bottom: 20px; } }
+
+@media (max-width: 800px) {
+  .img-chica-1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px; }
+  .img-chica-2 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px; }
+  .img-chica-3 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px; }
+  .img-grande-1 {
+    height: 200px;
+    margin-top: 0px; }
+  .img-grande-2 {
+    height: 200px;
+    margin-top: 0px; }
+  .img-grande-3 {
+    height: 200px;
+    margin-top: 0px; }
+  .img__ss-contenedor {
+    margin-top: 0px;
+    height: 200px; } }
+
+/*------------ Galeria ------------*/
+button {
+  margin: 0;
+  padding: 0; }
+
+.galeria--imagen {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 30px; }
+
+.galeria--imagen:hover {
+  opacity: 70%; }
+
+.galeria__modal-h500 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; }
+
+.galeria__div__button--estilos {
+  background-color: white;
+  border: none; }
+
+.galeria__div__button--estilos:focus {
+  outline: none; }
+
+@media (max-width: 800px) {
+  .galeria__modal-h500 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; }
+  .galeria__modal-mt {
+    margin-top: 50%; } }
+
+.bajada__contenedor--img {
+  height: 300px;
+  width: 100%;
+  background-image: url(../imagenes/cocina-index-1.jpg); }
+
+.bajada--texto {
+  height: 100px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px; }
+
+.contacto__div--datos-contacto {
+  height: 500px; }
+
+.contacto__img-silla {
+  height: 300px; }
+
+.contacto__h1__a {
+  color: black;
+  font-size: 4rem;
+  height: 200px; }
+  .contacto__h1__a:hover {
+    color: black; }
+
+@media (max-width: 800px) {
+  .contacto__h1__a {
+    font-size: 3rem; } }
+
+@media (max-width: 650px) {
+  .contacto__h1__a {
+    font-size: 2rem;
+    height: 100px; } }
+
+@media (max-width: 400px) {
+  .contacto__h1__a {
+    font-size: 1rem;
+    height: 70px; } }
+
+body {
+  font-size: 62.5%; }
+
+header .header__menu-estilo {
+  background-color: #b56576;
+  border-radius: 10px; }
+  header .header__menu-estilo nav ul {
+    list-style: none; }
+    header .header__menu-estilo nav ul li a {
+      font-size: 1.1rem;
+      color: white;
+      padding: 0px 20px 0px 20px; }
+    header .header__menu-estilo nav ul li a:hover {
+      color: black;
+      text-decoration: none;
+      background-color: #e56b6f;
+      padding: 8px 20px 8px 20px; }
+
+.social-bar {
+  position: fixed;
+  top: 0px;
+  right: 10%;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  z-index: 100; }
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s; }
+
+.icon:hover {
+  padding-top: 3rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.42); }
+
+.icon-instagram {
+  background-color: #dd2a7b;
+  border-radius: 0 0 0 10px; }
+
+.icon-facebook2 {
+  background-color: #2e4063;
+  border-radius: 0 0 10px 0; }
+
+/* Footer */
+footer {
+  height: 100px;
+  background-color: #3d3d3d; }
+
+.footer__div__p {
+  font-size: 1rem;
+  color: white;
+  margin-right: 40px; }
+
+h1 {
+  color: white; }
+
+h2 {
+  font-weight: lighter;
+  font-size: 3rem; }
+
+@media (max-width: 800px) {
+  .social-bar {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    flex-direction: column;
+    font-size: 1.5rem;
+    z-index: 100; }
+  .icon:hover {
+    padding-top: 0px;
+    border-radius: 0;
+    box-shadow: none; }
+  .icon-instagram {
+    border-radius: 10px 0 0 0; }
+  .icon-facebook2 {
+    border-radius: 0 0 0 10px; }
+  .footer__div--logo-redondo {
+    width: 60px;
+    height: 60px; }
+  .footer__div__p {
+    font-size: .7rem; }
+  h2 {
+    font-size: 2rem; } }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?w6juj8");
+  src: url("fonts/icomoon.eot?w6juj8#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?w6juj8") format("truetype"), url("fonts/icomoon.woff?w6juj8") format("woff"), url("fonts/icomoon.svg?w6juj8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-facebook2:before {
+  content: "\ea91"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }

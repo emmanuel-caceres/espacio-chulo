@@ -1,0 +1,91 @@
+/* INDEX */
+
+.carousel--img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.div__bajada--disenio-interiores{
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.bajada--texto-encima{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Tamaño del recuadro */
+    width: 80%;
+    height: 45%;
+    padding: 1rem 2rem 1rem 2rem;
+    /* Tamaño del recuadro */
+
+    background-color: rgba($color: white, $alpha: 0.7); 
+    border-radius: 1rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.div__bajada--font-size{
+    font-size: 1.5rem;
+}
+
+.index__div__h1-estilos{
+    color: black;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+.index__h1__a-estilo{
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        color: white;
+    }
+}
+
+/* FIN INDEX */
+
+@media (max-width: 800px) {
+
+    /* INDEX */
+    
+    h1{
+        font-size: 1rem;
+    }
+
+    .carousel--img{
+        height: 250px;
+    }
+    
+    .div__bajada--disenio-interiores{
+        height: 600px;
+    }
+
+    .bajada--texto-encima{
+        height: 50%;
+    }
+
+    .index__div__img-size{
+        height: 550px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .div__bajada--font-size{
+        font-size: 1rem;
+    }
+    
+    .index__div__h1-estilos{
+        font-weight: lighter;
+        font-size: 2rem;
+    }
+}
