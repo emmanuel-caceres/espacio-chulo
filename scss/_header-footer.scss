@@ -5,34 +5,37 @@ body{
 
 header{
 
-    .header__menu-estilo{
-        background-color: $colorprincipal;
-        border-radius: 10px;
+    background-color: #f4f1de;
 
-        nav{
+    .header__menu-estilo{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
             ul{
                 list-style: none;
 
                 li{
-                    
+                 
                     a{
                         font-size: 1.1rem;
-                        color: white;
-                        padding: 0px 20px 0px 20px;
+                        color: black;
+                        padding: 5px 30px 5px 30px;
+                        margin: 10px;
                     }
 
                     a:hover{
-                        color: black;
+                        padding: 10px 30px 10px 30px;
                         text-decoration: none;
-                        background-color: $colorsecundario;
-                        padding: 8px 20px 8px 20px;
+                        background-color: $color-c;
                     }
                 }
             }
         }
     }
-}
+
+// social bar
 
 .social-bar{
     position: fixed;
@@ -72,7 +75,7 @@ header{
 
 footer{
     height: 100px;
-    background-color: #3d3d3d;
+    background-color: black;
 }
 
 .footer__div__p{

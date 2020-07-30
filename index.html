@@ -18,17 +18,17 @@
 
 <body>
 
-  <header class="container">
+  <header class="container-fluid">
 
-    <div class="row justify-content-center mt-4 mb-3 ml-2 mr-2">
+    <div class="container">
+
+    <div class="row justify-content-center pt-3">
       <a href="index.html">
-        <img src="imagenes/logo-2.jpg" alt="Logo Espacio Chulo" class="img-fluid">
+        <img src="imagenes/logo-2.png" alt="Logo Espacio Chulo" class="img-fluid">
       </a>
     </div>
-
-    <div class="header__menu-estilo mb-4 d-flex justify-content-center">
-
-      <nav class="navbar navbar-dark navbar-expand-md">
+    
+      <nav class="navbar navbar-light navbar-expand-md">
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -36,8 +36,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav justify">
+        <div class="collapse navbar-collapse header__menu-estilo" id="navbarTogglerDemo01">
+          <ul class="navbar-nav">
             <li> <a href="index.html"> Inicio </a> </li>
             <li> <a href="servicios.html"> Servicios </a> </li>
             <li> <a href="galeria.html"> Galeria </a> </li>
@@ -48,7 +48,7 @@
 
       </nav>
 
-    </div>
+  </div>
   </header>
 
   <div class="social-bar">
@@ -61,68 +61,83 @@
     </div>
   </div>
 
-  <!-- slider bootstrap -->
-  <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagenes/cocina-index-1.jpg" class="d-block w-100 carousel--img"
-            alt="cocina con terminaciones en madera">
+  <!-- Cartel diseño de interiores -->
+
+  <div class="container-fluid div-container-fondo">
+    <div class="container">
+
+      <div class="row div__bajada--disenio-interiores">
+        <div class="col-xs-12 col-md-6 col-xl-4">
+          <img src="imagenes/living-ani-01.jpg" alt="living gris" class="img-fluid media__div__img-size">
         </div>
-        <div class="carousel-item">
-          <img src="imagenes/cocina-index-2.jpg" class="d-block w-100 carousel--img" alt="cocina negra">
+
+        <div class="d-none d-md-block col-md-6 col-xl-4">
+          <img src="imagenes/living-ani-02.jpg" alt="living gris" class="img-fluid media__div__img-size">
         </div>
-        <div class="carousel-item">
-          <img src="imagenes/cocina-index-3.jpg" class="d-block w-100 carousel--img" alt="cocina blanca">
+
+        <div class="d-none d-xl-block col-xl-4">
+          <img src="imagenes/living-ani-03.jpg" alt="living gris" class="img-fluid media__div__img-size">
+        </div>
+
+        <div class="bajada--texto-encima">
+          <h1 class="index__div__h1-estilos"> DISEÑO DE INTERIORES </h1>
+          <p class="div__bajada--font-size"> Realizamos muebles personalizados, trabajamos a domicilio y contamos con carpintería propia para poder llegar a concretar cualquier proyecto en lo que respecta al Diseño de interiores.
+          </p>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="col-xs-12 col-md-12 col-xl-12 d-flex flex-column align-items-center mt-5 mb-5">
-      <h2 class="div__h1--font-size"> ¡BIENVENIDO A TU NUEVO ESPACIO! </h2>
-    </div>
-  </div>
+    <!-- bienvenida -->
+    <div class="container div--contenedor-h2">
 
-  <div class="container">
-
-    <div class="row div__bajada--disenio-interiores">
-      <div class="col-xs-12 col-md-6 col-xl-4">
-        <img src="imagenes/living-ani-01.jpg" alt="living gris" class="img-fluid index__div__img-size">
-      </div>
-
-      <div class="d-none d-md-block col-md-6 col-xl-4">
-        <img src="imagenes/living-ani-02.jpg" alt="living gris" class="img-fluid index__div__img-size">
-      </div>
-
-      <div class="d-none d-xl-block col-xl-4">
-        <img src="imagenes/living-ani-03.jpg" alt="living gris" class="img-fluid index__div__img-size">
-      </div>
-
-      <div class="bajada--texto-encima">
-        <h1 class="index__div__h1-estilos"> ¡DISEÑO DE INTERIORES! </h1>
-        <p class="div__bajada--font-size"> Realizamos muebles personalizados, trabajamos a domicilio y contamos con
-          carpintería
-          propia para poder llegar a concretar cualquier proyecto en lo que respecta al Diseño de interiores.
-        </p>
+      <div class="col-xs-12 col-md-12 col-xl-11 div__h2-fondo">
+        <h2 class="text-white media__div__h2"> BIENVENIDO A TU NUEVO ESPACIO </h2>
       </div>
     </div>
 
-  </div>
+    <!-- slider bootstrap -->
+    <div class="container-fluid slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/cocina-index-1.jpg" class="d-block w-100 carousel--img"
+              alt="cocina con terminaciones en madera">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/cocina-index-2.jpg" class="d-block w-100 carousel--img" alt="cocina negra">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/cocina-index-3.jpg" class="d-block w-100 carousel--img" alt="cocina blanca">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container-fluid prueba">
+
+      <div class="text-center">
+        <h2 class="text-white">Contacto</h2>
+        <h6 class="text-white"> Vuelta de Obligado 4025</h6>
+        <h6 class="text-white"> Buenos Aires </h6>
+        <h5 class="text-white"> silvina@espaciochulo.com</h6>
+      </div>
+
+    </div>
 
   <div class="container-fluid">
 
@@ -133,10 +148,11 @@
       </div>
 
       <div>
-        <p class="footer__div__p"> Emmanuel Cáceres - Coder House - Trabajo integrador</p>
+        <p class="footer__div__p"> Emmanuel Cáceres - Coder House </p>
       </div>
 
     </footer>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

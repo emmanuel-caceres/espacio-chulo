@@ -13,24 +13,75 @@
     border-radius: 8px;
 }
 
+.div__p-size{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.div-color-fondo{
+    background-color: $color-a;
+}
+
+.img-contacto{
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 // CONTACTO 
 
+// datos de contacto
+
 .contacto__div--datos-contacto{
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 .contacto__img-silla{
     height: 300px;
 }
 
+// cartel visitar redes sociales
+
+
+
 .contacto__h1__a{
-    color: black;
-    font-size: 4rem;
-    height: 200px;
+    font-weight: 100;
+    color: white;
+    font-size: 3rem;
 
     &:hover{
-        color: black;
+        color: white;
+        text-decoration: none;
     }
+}
+
+.div__h2-fondo-hover{
+    background-color: $color-d;
+    border-radius: 30px;
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px $color-d;
+
+    &:hover{
+        background-color: $color-a;
+        box-shadow: 0 0 15px $color-a;
+    }
+}
+
+.contacto__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
 }
 
 // Termina CONTACTO 
@@ -40,13 +91,25 @@
     .contacto__h1__a{
         font-size: 3rem;
     }
+
+    .contacto__div--datos-contacto{
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
 }
 
 @media (max-width: 650px) {
 
     .contacto__h1__a{
         font-size: 2rem;
-        height: 100px;
+        height: 50px;
+    }
+
+    .div__h2-fondo-hover{
+        height: 50px;
+        border-radius: 10px;
+        top: -25px;
+        align-items: center;
     }
 }
 
@@ -54,6 +117,19 @@
 
     .contacto__h1__a{
         font-size: 1rem;
-        height: 70px;
+        height: 25px;
     }
+
+    .contacto__footer{
+        height: 150px;
+    }
+
+    .contacto__div--datos-contacto{
+        margin-bottom: 90px;
+    }
+
+    .media__div__h2-margen{
+        margin-top: 40px;
+    }
+
 }
