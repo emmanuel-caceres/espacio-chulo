@@ -4,91 +4,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="diseño de interiores y espacios a medida">
+  <meta name="keywords" content="diseño de interiores, decoración, muebles a medida">
 
-  <meta name= "description" content="Contacto">
-  <meta name="keywords" content="telefono, email, direccion">
-
-  <title>Contacto</title>
-
+  <title>Home</title>
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 
 <body>
 
-  <header class="container-fluid">
+  <header>
 
-    <div class="container">
+    <nav class="navbar navbar-light navbar-expand-xl nav__bar">
 
-    <div class="row justify-content-center pt-3">
       <a href="index.html">
-        <img src="imagenes/logo-2.png" alt="Logo Espacio Chulo" class="img-fluid">
+        <img src="imagenes/logo-2.png" alt="Logo Espacio Chulo" class="img-fluid img__nav">
       </a>
-    </div>
-    
-      <nav class="navbar navbar-light navbar-expand-md">
 
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse header__menu-estilo" id="navbarTogglerDemo01">
-          <ul class="navbar-nav">
-            <li> <a href="index.html"> Inicio </a> </li>
-            <li> <a href="servicios.html"> Servicios </a> </li>
-            <li> <a href="galeria.html"> Galeria </a> </li>
-            <li> <a href="nosotros.html"> Nosotros </a> </li>
-            <li> <a href="contacto.html"> Contacto </a> </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse header__menu-estilo" id="navbarTogglerDemo01">
+        <ul class="navbar-nav">
+          <li> <a href="index.html"> INICIO </a> </li>
+          <li> <a href="servicios.html"> SERVICIOS </a> </li>
+          <li> <a href="galeria.html"> GALERIA </a> </li>
+          <li> <a href="nosotros.html"> NOSOTROS </a> </li>
+          <li> <a href="contacto.html"> CONTACTO </a> </li>
+        </ul>
+      </div>
 
-      </nav>
+    </nav>
 
-  </div>
   </header>
 
+  <!-- Social Bar -->
+
   <div class="social-bar">
-    <div>
+
     <a href="https://www.instagram.com/espacio_chulo/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
-  </div>
 
-  <div>
     <a href="https://www.facebook.com/espaciochulo" class="icon icon-facebook2" target="_blank"></a>
+
   </div>
-  </div>
 
-<!-- Datos de contacto-->
-  <div class="container-fluid">
+  <!-- Datos de contacto-->
+  <div class="container-fluid div__form-contenedor">
 
-    <div class="row contacto__div--datos-contacto">
+    <div class="col-xs-12 col-md-10 col-xl-10">
 
-      <div class="mr-5">
-        <img src="imagenes/silla-contacto-ilus.png" alt="" class="contacto__img-silla img-fluid">
-      </div>
+      <form action="enviar.php" method="POST">
 
-      <div class="mb-5">
-        <h1 class="text-dark">Contacto</h1>
-        <h6> Vuelta de Obligado 4025</h6>
-        <h6> Buenos Aires </h6>
-        <h6> silvina@espaciochulo.com</h6>
-      </div>
+        <h3 class="text-center mb-4"> CONSULTAS </h3>
+
+        <input type="text" name="nombre" placeholder="Nombre" class="div-input" required>
+
+        <input type="text" name="apellido" placeholder="Apellido" class="div-input" required>
+
+        <input type="text" name="telefono" placeholder="Telefono" class="div-input" required>
+
+        <input type="email" name="email" placeholder="nombre@ejemplo.com" class="div-input" required>
+
+        <textarea type="textarea" name="mensaje" placeholder="Consulta" required></textarea>
+
+        <div>
+          <label for="newsletter">
+            <p class="newsletter"> Desea recibir nuestro Newsletter </p>
+          </label>
+          <input type="checkbox" name="acepta">
+        </div>
+
+        <div class="contacto__div-botones">
+
+          <div>
+            <input type="reset" name="reset" value="Limpiar Todo" class="form__boton-borrar">
+            <input type="submit" name="submit" value="Enviar" class="form__boton-enviar">
+          </div>
+
+        </div>
+
+      </form>
 
     </div>
 
   </div>
 
-  
   <!-- cartel Visitar Redes Sociales -->
 
   <div class="container div--contenedor-h2">
 
-    <div class="col-xs-12 col-md-12 col-xl-12 div__h2-fondo-hover">
-      <a href="https://www.instagram.com/espacio_chulo/?hl=es-la" class="contacto__h1__a" target="_blank"> VISITA NUESTRO INSTAGRAM </a>
+    <div class="col-xs-12 col-md-12 col-xl-10 div__h2-fondo-hover">
+      <a href="https://www.instagram.com/espacio_chulo/?hl=es-la" class="contacto__h1__a" target="_blank"> VISITA
+        NUESTRO INSTAGRAM </a>
     </div>
 
   </div>

@@ -1,9 +1,21 @@
 // Nosotros
 
+.div-backcolor{
+    background-color: $color-b;
+}
+
+.div-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 .bajada__contenedor--img{
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-image: url(../imagenes/cocina-index-1.jpg);
+    background-attachment: fixed;
 }
 
 .bajada--texto{
@@ -19,7 +31,7 @@
     margin-top: 20px;
 }
 
-.div-color-fondo{
+.nosotros__div-color-fondo{
     background-color: $color-a;
 }
 
@@ -31,23 +43,90 @@
 
 // CONTACTO 
 
-// datos de contacto
+// Formulario Contacto
 
-.contacto__div--datos-contacto{
+.div__form-contenedor{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 130px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../imagenes/fondo-contacto.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
 }
 
-.contacto__img-silla{
-    height: 300px;
+form{
+    width: 70%;
+    background-color: rgba($color: $color-a, $alpha: .9);
+    padding: 20px 100px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 5px 10px gray;
+}
+
+@mixin input {
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+.div-input{
+    @include input;
+}
+
+textarea{
+    @include input;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+}
+
+.contacto__div-botones{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin boton {
+    border: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form__boton-enviar{
+    @include boton;
+    background-color: $color-e;
+    padding: 10px 40px;
+    color: white;
+
+    &:hover{
+        background-color: $color-c;
+    }
+}
+
+.form__boton-borrar{
+    @include boton;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 20px;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.newsletter{
+    font-size: 1.3rem;
+    margin-right: 10px;
 }
 
 // cartel visitar redes sociales
-
-
 
 .contacto__h1__a{
     font-weight: 100;
@@ -61,15 +140,15 @@
 }
 
 .div__h2-fondo-hover{
-    background-color: $color-d;
+    background-color: $color-c;
     border-radius: 30px;
-    height: 120px;
+    height: 80px;
     position: absolute;
-    top: -60px;
+    top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px $color-d;
+    box-shadow: 0 0 15px $color-c;
 
     &:hover{
         background-color: $color-a;
@@ -92,10 +171,21 @@
         font-size: 3rem;
     }
 
-    .contacto__div--datos-contacto{
-        margin-top: 200px;
-        margin-bottom: 200px;
-    }
+        // formulario
+
+        .div__form-contenedor{
+            padding-bottom: 150px;
+            padding-top: 150px;
+        }
+
+        form{
+            width: 100%;
+            padding: 15px;
+        }
+    
+        .newsletter{
+            font-size: 1rem;
+        }
 }
 
 @media (max-width: 650px) {
@@ -111,6 +201,12 @@
         top: -25px;
         align-items: center;
     }
+
+    .div__form-contenedor{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -122,10 +218,6 @@
 
     .contacto__footer{
         height: 150px;
-    }
-
-    .contacto__div--datos-contacto{
-        margin-bottom: 90px;
     }
 
     .media__div__h2-margen{

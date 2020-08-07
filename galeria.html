@@ -4,70 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="diseño de interiores y espacios a medida">
+  <meta name="keywords" content="diseño de interiores, decoración, muebles a medida">
 
-  <meta name= "description" content="Fotos de trabajos realizados">
-  <meta name="keywords" content="cocina, living, dormitorio, baño, vestidor, muebles">
-
-  <title>Galeria</title>
-
+  <title>Home</title>
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 
 <body>
 
-  <header class="container-fluid">
+  <header>
 
-    <div class="container">
+    <nav class="navbar navbar-light navbar-expand-xl nav__bar">
 
-    <div class="row justify-content-center pt-3">
       <a href="index.html">
-        <img src="imagenes/logo-2.png" alt="Logo Espacio Chulo" class="img-fluid">
+        <img src="imagenes/logo-2.png" alt="Logo Espacio Chulo" class="img-fluid img__nav">
       </a>
-    </div>
-    
-      <nav class="navbar navbar-light navbar-expand-md">
 
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse header__menu-estilo" id="navbarTogglerDemo01">
-          <ul class="navbar-nav">
-            <li> <a href="index.html"> Inicio </a> </li>
-            <li> <a href="servicios.html"> Servicios </a> </li>
-            <li> <a href="galeria.html"> Galeria </a> </li>
-            <li> <a href="nosotros.html"> Nosotros </a> </li>
-            <li> <a href="contacto.html"> Contacto </a> </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse header__menu-estilo" id="navbarTogglerDemo01">
+        <ul class="navbar-nav">
+          <li> <a href="index.html"> INICIO </a> </li>
+          <li> <a href="servicios.html"> SERVICIOS </a> </li>
+          <li> <a href="galeria.html"> GALERIA </a> </li>
+          <li> <a href="nosotros.html"> NOSOTROS </a> </li>
+          <li> <a href="contacto.html"> CONTACTO </a> </li>
+        </ul>
+      </div>
 
-      </nav>
+    </nav>
 
-  </div>
   </header>
 
+  <!-- Social Bar -->
+
   <div class="social-bar">
-    <div>
+
     <a href="https://www.instagram.com/espacio_chulo/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
-  </div>
 
-  <div>
     <a href="https://www.facebook.com/espaciochulo" class="icon icon-facebook2" target="_blank"></a>
-  </div>
+
   </div>
 
-  <div class="container">
+  <div class="container mt-5 mb-5">
     <div class="row">
-      <div class="col-xs-12 col-md-4 col-xl-6">
+      <div class="col-xs-12 col-md-4 col-xl-6 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#cortinado" class="galeria__div__button--estilos">
-          <img src="imagenes/cocina-index-2.jpg" alt="Cocona" class="img-fluid galeria--imagen">
+          <img src="imagenes/cocina-index-2.jpg" alt="Cocina" class="img-fluid galeria--imagen">
         </button>
 
         <!-- Modal -->
@@ -82,21 +82,21 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="imagenes/cocina-index-2.jpg" alt="cocina" class="img-fluid">
+                <img src="imagenes/cocina-index-2.jpg" alt="cocina" class="img-fluid galeria__modal-h500">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
-        <button type="button" data-toggle="modal" data-target="#baño-1" class="galeria__div__button--estilos">
-          <img src="imagenes/baño-1.jpg" alt="Baño" class="img-fluid galeria--imagen">
+        <button type="button" data-toggle="modal" data-target="#bano-1" class="galeria__div__button--estilos">
+          <img src="imagenes/Bano-1.jpg" alt="Baño" class="img-fluid galeria--imagen">
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="baño-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="bano-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog galeria__modal-mt">
             <div class="modal-content">
@@ -107,17 +107,17 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="imagenes/baño-1.jpg" alt="Baño" class="img-fluid galeria__modal-h500">
+                <img src="imagenes/Bano-1.jpg" alt="Baño" class="img-fluid galeria__modal-h500">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#reciclado-2" class="galeria__div__button--estilos">
-          <img src="imagenes/reciclado-2.jpg" alt="Sillon Reciclado" class="img-fluid galeria--imagen">
+          <img src="imagenes/Reciclado-2.jpg" alt="Sillon Reciclado" class="img-fluid galeria--imagen">
         </button>
 
         <!-- Modal -->
@@ -132,7 +132,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="imagenes/reciclado-2.jpg" alt="cortinados" class="img-fluid galeria__modal-h500">
+                <img src="imagenes/Reciclado-2.jpg" alt="cortinados" class="img-fluid galeria__modal-h500">
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@
 
     <div class="row">
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#di-mesa-lampara" class="galeria__div__button--estilos">
           <img src="imagenes/di-mesa-lampara.jpg" alt="Mesa de Arrime" class="img-fluid galeria--imagen">
@@ -168,10 +168,10 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-6">
+      <div class="col-xs-12 col-md-4 col-xl-6 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#cocina-1" class="galeria__div__button--estilos">
-          <img src="imagenes/cocina-1.jpg" alt="Baño" class="img-fluid galeria--imagen">
+          <img src="imagenes/Cocina-1.jpg" alt="cocina azulejos blancos" class="img-fluid galeria--imagen">
         </button>
 
         <!-- Modal -->
@@ -186,14 +186,14 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="imagenes/cocina-1.jpg" alt="Cocina azulejos blancos" class="img-fluid galeria__modal-h500">
+                <img src="imagenes/Cocina-1.jpg" alt="Cocina azulejos blancos" class="img-fluid galeria__modal-h500">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#di-maquillaje" class="galeria__div__button--estilos">
           <img src="imagenes/di-maquillaje.jpg" alt="Baño" class="img-fluid galeria--imagen">
@@ -222,7 +222,7 @@
 
     <div class="row">
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#mm-modular" class="galeria__div__button--estilos">
           <img src="imagenes/mm-modular.jpg" alt="Mesa de Arrime" class="img-fluid galeria--imagen">
@@ -247,7 +247,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#mm-vajillero-1" class="galeria__div__button--estilos">
           <img src="imagenes/mm-vajillero-1.jpg" alt="Baño" class="img-fluid galeria--imagen">
@@ -272,7 +272,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-6">
+      <div class="col-xs-12 col-md-4 col-xl-6 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#mm-vestidor-2" class="galeria__div__button--estilos">
           <img src="imagenes/mm-vestidor-2.JPG" alt="Baño" class="img-fluid galeria--imagen">
@@ -301,7 +301,7 @@
 
     <div class="row">
 
-      <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#di-mesa-lampara" class="galeria__div__button--estilos">
           <img src="imagenes/di-mesa-lampara.jpg" alt="Mesa de Arrime" class="img-fluid galeria--imagen">
@@ -326,7 +326,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-6">
+      <div class="col-xs-12 col-md-4 col-xl-6 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#cocina-index-3" class="galeria__div__button--estilos">
           <img src="imagenes/cocina-index-3.jpg" alt="Baño" class="img-fluid galeria--imagen">
@@ -351,7 +351,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-xl-3 mb-5">
+      <div class="col-xs-12 col-md-4 col-xl-3 div__col">
         <!-- Button trigger modal -->
         <button type="button" data-toggle="modal" data-target="#di-maquillaje" class="galeria__div__button--estilos">
           <img src="imagenes/di-maquillaje.jpg" alt="Baño" class="img-fluid galeria--imagen">

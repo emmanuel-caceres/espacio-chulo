@@ -1,0 +1,57 @@
+// Gracias html
+
+.gracias-contenedor{
+    height: 100vh;
+    padding-top: 10%;
+    box-sizing: border-box;
+    background-image: url(../imagenes/fondo-contacto.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+.gracias-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: $color-e, $alpha: .8);
+    height: 300px;
+    border-radius: 10px;
+}
+
+.boton-consulta{
+    width: 200px;
+    height: 60px;
+    background-color: $color-a;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+
+    &:hover{
+        background-color: $color-c;
+    }
+}
+
+.a__gracias{
+    font-size: 1.3rem;
+    color: white;
+
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.gracias-row{
+    margin: 0;
+}
+
+@media (max-width: 400px) {
+
+    .gracias-contenedor{
+        padding-top: 40%;
+    }
+}

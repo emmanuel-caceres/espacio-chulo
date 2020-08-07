@@ -9,7 +9,8 @@ button{
     height: 250px;
     width: 100%;
     object-fit: cover;
-    margin-top: 30px;
+    padding: 5px;
+
 }
 
 .galeria--imagen:hover{
@@ -30,6 +31,8 @@ button{
 .galeria__div__button--estilos:focus{
     outline: none;
 }
+
+// medias
 
 @media (max-width: 800px) {
 

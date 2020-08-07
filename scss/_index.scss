@@ -1,24 +1,52 @@
 /* INDEX */
 
-.prueba{
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: $color-e;
+// cartel diseño de interiores
+
+.div-container-fondo{
+    background-color: $color-a;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.div__bajada--disenio-interiores{
+    position: relative;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.media__div__img-size{
+    opacity: 70%;
+}
+
+.bajada--texto-encima{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Tamaño del recuadro */
+    width: 80%;
+    height: 45%;
+    padding: 1rem 2rem 1rem 2rem;
+    /* Tamaño del recuadro */
+
+    background-color: rgba($color: $color-b, $alpha: .8); 
+    border-radius: 1rem;
+    text-align: center;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-// slider bootstrap
-
-.carousel--img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.index__div__h1-estilos{
+    color: black;
+    font-weight: 200;
+    font-size: 4rem;
 }
 
-.slider{
-    padding: 0;
+.div__bajada--font-size{
+    font-size: 1.5rem;
 }
 
 // bienvenida
@@ -39,58 +67,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px $color-c;
 }
 
-// cartel diseño de interiores
+// slider bootstrap
 
-.div-container-fondo{
-    background-color: $color-a;
-    padding-bottom: 50px;
+.carousel--img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
-.div__bajada--disenio-interiores{
-    position: relative;
-    padding-bottom: 50px;
-    padding-top: 50px;
+.slider{
+    padding: 0;
 }
 
-.bajada--texto-encima{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+// Index Contacto
 
-    /* Tamaño del recuadro */
-    width: 80%;
-    height: 45%;
-    padding: 1rem 2rem 1rem 2rem;
-    /* Tamaño del recuadro */
+.index__contacto{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: $color-c;
 
-    background-color: rgba($color: white, $alpha: 0.8); 
-    border-radius: 1rem;
-    text-align: center;
+}
 
+.index__contacto-imgsize{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.index__contacto-row{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
-.index__div__h1-estilos{
-    color: black;
-    font-weight: lighter;
-    font-size: 4rem;
+.div__col{
+    padding: 0;
 }
 
-.div__bajada--font-size{
-    font-size: 1.5rem;
-}
-
-/* FIN INDEX */
+// Medias
 
 @media (max-width: 800px) {
-
-    /* INDEX */
 
     // bienvenida
 
@@ -105,23 +124,18 @@
         margin-right: 20px;
         top: -35px;
     }
-
-    //
     
-    h1{
-        font-size: 1rem;
-    }
-
     .carousel--img{
         height: 250px;
     }
     
     .div__bajada--disenio-interiores{
-        height: 600px;
+        padding-top: 20px;
+        padding-bottom: 70px;
     }
 
     .bajada--texto-encima{
-        height: 50%;
+        height: 60%;
     }
 
     .media__div__img-size{
@@ -136,8 +150,14 @@
     
     .index__div__h1-estilos{
         font-weight: lighter;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
+}
 
+@media (max-width: 1050px) {
+    .index__contacto{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }

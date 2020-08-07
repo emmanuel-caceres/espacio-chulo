@@ -1,3 +1,6 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
 
 $color-a: #81b29a;
 $color-b: #f4f1de;
@@ -14,3 +17,4 @@ $color-e: #3d405b;
 @import "nosotros-contacto";
 @import "header-footer";
 @import "redes";
+@import "gracias.scss";

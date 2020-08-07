@@ -1,4 +1,7 @@
-/* SERVICIOS */
+// Servicios
+
+//parrajos servicios principales
+
 .servicios__text-start{
     font-size: 1rem;
 }
@@ -7,6 +10,8 @@
     font-size: 1rem;
     text-align: end;
 }
+
+// Servicios Principales
 
 .servicios__div--diseño-interiores{
     display: flex;
@@ -76,9 +81,7 @@
     100%{ opacity: 0% }
 }
 
-/* Fin Animacion IMG Grande */
-
-/* Animacion IMG Chica */
+// Animacion IMG Chica 
 
 @mixin img-chica {
     width: 205px;
@@ -136,10 +139,10 @@
 }
 
 // Servicios Secundarios
+
 .img-cortinados{
     @include img-grande;
     margin-top: 150px;
-    margin-bottom: 100px;
 }
 
 .img-reciclado{
@@ -165,7 +168,7 @@
     text-shadow: 0 0 10px (gray);
 }
 
-// Nuestros clientes
+// Carte Nuestros clientes
 
 .servicios__contenedor-cliente{
     position: relative;
@@ -176,7 +179,7 @@
 
 .cartel-cliente{
     position: absolute;
-    top: -50px;
+    top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +188,8 @@
     box-shadow: 0 0 15px #928f8f;
     background-color: $color-c;
 }
+
+// Clientes
 
 .img-clientes-contenedor{
     height: 350px;
@@ -336,7 +341,15 @@
 @media (max-width: 650px) {
     .img-cortinados{
         margin-top: 0px;
-        margin-bottom: 100px;
+        height: 200px;
+    }
+
+    .img-reciclado{
+        height: 200px;
+    }
+
+    .div__h2-contenido-reciclado{
+        top: 15%;
     }
 
     .div__h2-contenido-cortinado{
