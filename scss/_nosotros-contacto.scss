@@ -102,12 +102,13 @@ textarea{
 
 .form__boton-enviar{
     @include boton;
-    background-color: $color-e;
+    background-color: $color-c;
     padding: 10px 40px;
     color: white;
+    transition: all .5s;
 
     &:hover{
-        background-color: $color-c;
+        box-shadow: 0 0 20px (white)
     }
 }
 

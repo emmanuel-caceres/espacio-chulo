@@ -11,7 +11,7 @@ header{
 
     .header__menu-estilo{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
 
         ul{
             list-style: none;
@@ -34,10 +34,18 @@ header{
     }
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 // nav
 
+.img__nav{
+    width: 300px;
+}
+
 .nav__bar{
-    background-color: $color-b;
+    background-color: rgba($color-b, $alpha: 0.9);
     width: 100%;
     position: fixed;
     z-index: 100;

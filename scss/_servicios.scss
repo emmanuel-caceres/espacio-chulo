@@ -1,5 +1,9 @@
 // Servicios
 
+.body-servicios {
+    background-color: antiquewhite; 
+}
+
 //parrajos servicios principales
 
 .servicios__text-start{
@@ -186,7 +190,7 @@
     border-radius: 20px;
     height: 100px;
     box-shadow: 0 0 15px #928f8f;
-    background-color: $color-c;
+    background-color: rgba($color-c, $alpha: 0.8);
 }
 
 // Clientes
@@ -195,7 +199,7 @@
     height: 350px;
     width: 100%;
     margin-bottom: 50px;
-    background-color: $color-d;
+    background-color: $color-b;
     border-radius: 10px;
     padding: 0;
     box-shadow: 5px 5px 10px rgb(207, 207, 207);
