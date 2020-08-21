@@ -196,6 +196,13 @@
 
 // Medias
 
+@media (max-width: 1050px) {
+    .index__contacto{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
 @media (max-width: 800px) {
 
     // bienvenida
@@ -222,7 +229,7 @@
     }
 
     .bajada--texto-encima{
-        height: 60%;
+        height: 40%;
     }
 
     .media__div__img-size{
@@ -245,9 +252,8 @@
     }
 }
 
-@media (max-width: 1050px) {
-    .index__contacto{
-        padding-top: 50px;
-        padding-bottom: 50px;
+@media (max-width: 450px) {
+    .bajada--texto-encima{
+        height: 60%;
     }
 }

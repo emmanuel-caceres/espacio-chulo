@@ -87,8 +87,18 @@ a:hover{
 /* Footer */
 
 footer{
-    height: 100px;
-    background-color: black;
+    height: 150px;
+    background-color: #222;
+}
+
+footer div ul li a{
+
+    font-size: 1rem;
+    color: white;
+
+    &:hover{
+    color:rgba($color: white, $alpha: 0.7);
+    }
 }
 
 .footer__div__p{
@@ -110,7 +120,13 @@ h2{
 
 // Media
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+    footer{
+        height: 250px;
+    }
+}
+
+@media (max-width: 1025px) {
 
     //nav
 
@@ -155,3 +171,5 @@ h2{
     }
 
 }
+
+

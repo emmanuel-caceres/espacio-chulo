@@ -37,8 +37,7 @@
 
 .img-contacto{
     height: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 50px 0;
 }
 
 // CONTACTO 
@@ -54,6 +53,7 @@
     background-image: url(../imagenes/fondo-contacto.jpg);
     background-size: 100vw;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 form{
